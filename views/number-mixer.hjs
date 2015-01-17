@@ -41,7 +41,7 @@
 		color: #333;*/
 	}
 
-	.block{
+	.block, .sortable-placeholder{
 		/*this will need to get set by javascript depending on board size*/
 		width: 10%;
 		height: 20%;
@@ -63,10 +63,13 @@
 	    height: calc(56.25vw - 100px); /* 100/56.25 = 1.778 */
 	    max-height: calc(100vh - 100px);
 	    max-width: 177.78vh; /* 16/9 = 1.778 */
-	    margin: auto;
+	    margin: 0 auto !important;
+	    padding: 0 !important;
 	    position: absolute;
 	    top:0px;bottom:0; /* vertical center */
 	    left:0;right:0; /* horizontal center */
+	    list-style-type: none;
+	    list-style-position: inside;
 	}
 
 	.piece{
@@ -74,6 +77,7 @@
 		height: 90%;
 		margin: 5%;
 		cursor: pointer;
+		border-radius: 10px;
 		-moz-animation-name: dropHeader;
 	    -moz-animation-iteration-count: 1;
 	    -moz-animation-timing-function: ease-in-out;
@@ -147,6 +151,11 @@
 		color: #aaa;
 	}
 </style>
+<script>
+$(function(){
+	
+});
+</script>
 <h1 class="tc" style="margin-bottom:30px;">Number Mixer</h1>
 <div id="wrapper" class="tc" style="position:fixed; height: 100%; width: 100%;">
 <div id="boardWrapper"></div>

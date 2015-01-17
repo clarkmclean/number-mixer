@@ -24,18 +24,17 @@ $(function(){
 	function startGame(){
 		$('#startGame').addClass('hide');
 		$('#boardWrapper').append(buildBoard());
-		setTimeout(populateBoard(), 500);
-		animatePieces();
+		populateBoard();
 	}
 	function buildBoard(){
 		var html = [];
-		html.push('<div id="board" class="flush-full">');
+		html.push('<ul id="board" class="sortable grid">');
 		for(var i = 1; i <= 5; i++){
 				for(var j = 1; j <= 10; j++){
-					html.push('<div class="block ' + i +'"></div>');
+					html.push('<li class="block ' + i +'"></li>');
 				}
 		}
-		html.push('</div>')
+		html.push('</ul>')
 		return html.join("");
 	}
 	function populateBoard(){
@@ -47,7 +46,6 @@ $(function(){
 				pieces[i].push(j);
 			}
 		}
-		console.log(pieces);
 		// blanks
 		for(var i = 1; i <= numOfBlanks;i++){
 			blank.push(i);
@@ -67,6 +65,7 @@ $(function(){
 			placePiece(x);
 			if(++x === numOfPieces){
 				window.clearInterval(intervalId);
+				finishBoard();
 			}
 		}, 25);
 
@@ -88,10 +87,15 @@ $(function(){
 
 		$('.block:eq(' + index + ')').append(pieceHtml);
 		randType.splice(num2, 1);
-		console.log(color + ' ' + randType.length + ' : ' + num1 + '/' + num2);
 		if(randType.length == 0){
 			pieces.splice(num1,1);
 			colorsArray.splice(num1,1);
 		}
+	}
+
+	function finishBoard(){
+		$('.sortable').sortable({
+			items: '.block'
+		});
 	}
 });

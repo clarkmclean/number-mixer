@@ -41,18 +41,31 @@
 	}
 
 	.block{
+		/*this will need to get set by javascript depending on board size*/
 		width: 10%;
-		height: 10vw;
+		height: 20%;
 		float: left;
 		margin: 0;
 		box-shadow: 1px 1px #333;
 	}
 
-	#board{
+	#boardWrapper{
 		width: 100%;
+		height: calc(100% - 60px);
 		position: relative;
-		top: 100px;
-		margin: 0 auto;
+		top: 50px;
+
+	}
+
+	#board{
+		width: 100vw; 
+	    height: calc(56.25vw - 100px); /* 100/56.25 = 1.778 */
+	    max-height: calc(100vh - 100px);
+	    max-width: 177.78vh; /* 16/9 = 1.778 */
+	    margin: auto;
+	    position: absolute;
+	    top:0px;bottom:0; /* vertical center */
+	    left:0;right:0; /* horizontal center */
 	}
 
 	.piece{
@@ -87,10 +100,13 @@
 	}
 	@-webkit-keyframes dropHeader {
 	    0% {
-	        -webkit-transform: scale(.8);
+	        -webkit-transform: scale(.5);
+	    }
+	    90% {
+	        -webkit-transform: scale(1.055);
 	    }
 	    100% {
-	        -webkit-transform: scale(1);
+	    	-webkit-transform: scale(1);
 	    }
 	}
 	@keyframes dropHeader {
@@ -157,7 +173,7 @@ $(function(){
 
 	function startGame(){
 		$('#startGame').addClass('hide');
-		$('#wrapper').append(buildBoard());
+		$('#boardWrapper').append(buildBoard());
 		setTimeout(populateBoard(), 500);
 		animatePieces();
 	}
@@ -232,7 +248,9 @@ $(function(){
 </script>
 <h1 class="tc" style="margin-bottom:30px;">Number Mixer</h1>
 <div id="wrapper" class="tc" style="position:fixed; height: 100%; width: 100%;">
+<div id="boardWrapper"></div>
 	<span id="startGame" class="btn mobile-full" style="position: relative; top: 40%; transform: translateY(-40%); width: 300px; display: inline-block;">Start New Game!</span>
+
 </div>
 </body>
 </html>

@@ -54,8 +54,6 @@ $(function(){
 		pieces.push(blank);
 		colorsArray.push('blank');
 
-		console.log(pieces);
-
 		//put everything in the board
 		//select by index of <td>
 		//randomly select from multidimensional array
@@ -81,11 +79,18 @@ $(function(){
 		// get piece from array
 		var indPiece = randType[num2];
 		// get color string from color array
+
+		///get block for piece
+		var $block = $('.block:eq(' + index + ')');
 		
 
 		var pieceHtml = '<div class="piece ' + color + '" data-number="' + randType[num2] + '"></div>';
 
-		$('.block:eq(' + index + ')').append(pieceHtml);
+		$block.append(pieceHtml);
+		//disable blanks so they can't be moved
+		// if(color == 'blank'){
+		// 	$block.addClass('disabled');
+		// };
 		randType.splice(num2, 1);
 		if(randType.length == 0){
 			pieces.splice(num1,1);
@@ -94,8 +99,28 @@ $(function(){
 	}
 
 	function finishBoard(){
+		analyzeBoard();
 		$('.sortable').sortable({
-			items: '.block'
+			items: '.block:not(.disabled)'
+		}).bind('sortupdate', function() {
+	    	//Triggered when the user stopped sorting and the DOM position has changed.
+	    	console.log('sortupdate');
+	    	analyzeBoard();
+		}).bind('sortstart', function() {
+	    	//Triggered when the user stopped sorting and the DOM position has changed.
+	    	console.log('sortstart');
+	    	analyzePiece();
 		});
+	}
+	function analyzeBoard(){
+		//loop through pieces
+		//maybe put the numbers on either side of the blank as classes on it?
+		$('.blank').each(function(){
+			var index = $('.block').index(this);
+			var left = $('.')
+		});
+	}
+	function analyzePiece(){
+
 	}
 });

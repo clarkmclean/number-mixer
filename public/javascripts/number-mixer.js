@@ -1,3 +1,12 @@
+
+/// TO DO
+/// ------------------------------------------------------------------------------------------------------------
+/// [ ] Enable swapping cells
+/// [ ] Reset Game action
+/// [ ] Finish Game action
+/// [ ] Move counter
+/// ------------------------------------------------------------------------------------------------------------
+
 $(function(){
 	//some defaults
 	var rowLength = 9;
@@ -84,13 +93,13 @@ $(function(){
 		var $block = $('.block:eq(' + index + ')');
 		
 
-		var pieceHtml = '<div class="piece ' + color + '" data-number="' + randType[num2] + '"></div>';
+		var pieceHtml = '<div class="piece ' + color + '" data-number="' + randType[num2] + '" data-color="' + color + '"></div>';
 
 		$block.append(pieceHtml);
 		//disable blanks so they can't be moved
-		// if(color == 'blank'){
-		// 	$block.addClass('disabled');
-		// };
+		if(color == 'blank'){
+			$block.addClass('disabled');
+		};
 		randType.splice(num2, 1);
 		if(randType.length == 0){
 			pieces.splice(num1,1);
@@ -99,28 +108,89 @@ $(function(){
 	}
 
 	function finishBoard(){
-		analyzeBoard();
-		$('.sortable').sortable({
-			items: '.block:not(.disabled)'
-		}).bind('sortupdate', function() {
-	    	//Triggered when the user stopped sorting and the DOM position has changed.
-	    	console.log('sortupdate');
-	    	analyzeBoard();
-		}).bind('sortstart', function() {
-	    	//Triggered when the user stopped sorting and the DOM position has changed.
-	    	console.log('sortstart');
-	    	analyzePiece();
-		});
+		// analyzeBoard();
+		initDrag();
+		
 	}
-	function analyzeBoard(){
-		//loop through pieces
-		//maybe put the numbers on either side of the blank as classes on it?
-		$('.blank').each(function(){
-			var index = $('.block').index(this);
-			var left = $('.')
-		});
-	}
-	function analyzePiece(){
 
+	function initDrag(){
+		var index,dragging;
+		var placeholder = $('<div class="piece sortable-placeholder"/>')
+		$('.piece').each(function(){
+			$(this).attr('draggable', 'true');
+		}).on('dragstart.h5s', function(e) {
+			$('.piece').parent().trigger('sortstart', {item: dragging});
+			var dt = e.originalEvent.dataTransfer;
+
+			dt.effectAllowed = 'move';
+	        dt.setData('text', '');
+
+			index = (dragging = $(this)).addClass('sortable-dragging').index();
+			console.log(index);
+			dragging.hide();
+			$(this).append(placeholder);
+			// $(this).addClass('hide');
+		});
 	}
+	
+
+
+	// function analyzeBoard(){
+	// 	console.log('analyzeboard');
+	// 	//loop through pieces
+	// 	//maybe put the numbers on either side of the blank as classes on it?
+	// 	$('.blank').each(function(){
+	// 		var $this = $(this);
+	// 		var $block = $this.parent('.block')
+	// 		var index = $('.block').index($block);
+	// 		var right;
+	// 		// console.log(index);
+	// 		//we dont want to do the last of a row or the beginning of a row.  Far-rights dont need nexts and Far-lefts dont need prev and next classes
+	// 		if((index+1)%(rowLength+1) != 0)
+	// 		{
+	// 			$right = $block.next('.block');
+	// 			$rightpiece = $right.children('.piece');
+	// 			$block.addClass($rightpiece.data('number') + $rightpiece.data('color'));
+	// 		}
+	// 		if((index)%(rowLength+1) != 0)
+	// 		{
+	// 			$left = $block.prev('.block');
+	// 			$leftpiece = $left.children('.piece');
+	// 			$block.addClass($leftpiece.data('number') + $leftpiece.data('color'));
+	// 		}
+	// 	});
+
+	// 	//disable the pieces that cant be moved?  OR just leave them?
+	// }
+	// function analyzePiece(){
+	// 	//this is where we find proper blank spaces the piece grabbed can be moved
+	// 	//get dragging piece
+	// 	var $handPiece = $('.sortable-dragging');
+	// 	var pieceColor = $handPiece.data('color');
+	// 	var pieceNumber = $handPiece.data('number');
+	// 	var $targets = $('.' + pieceNumber + pieceColor);
+	// 	//first disable all blocks
+	// 	$('.block').sortable('disable');
+	// 	//then re-enable the targets
+	// 	$targets.sortable('enable');
+	// 	$targets.addClass('targetBlock');
+
+	// }
+
+	// function swapElements(elm1, elm2) {
+	//     var parent1, next1,
+	//         parent2, next2;
+
+	//     parent1 = elm1.parentNode;
+	//     next1   = elm1.nextSibling;
+	//     parent2 = elm2.parentNode;
+	//     next2   = elm2.nextSibling;
+
+	//     parent1.insertBefore(elm2, next1);
+	//     parent2.insertBefore(elm1, next2);
+	// }
 });
+
+
+
+

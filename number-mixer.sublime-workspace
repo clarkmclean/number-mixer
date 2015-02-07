@@ -1,0 +1,443 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/www/sites/nodeSB/views/index.hjs",
+			"settings":
+			{
+				"buffer_size": 12397,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "number-mixer.sublime-project",
+			"settings":
+			{
+				"buffer_size": 812,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/rcw/trunk/rcw-site/site/script/modal.js",
+			"settings":
+			{
+				"buffer_size": 7496,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"p",
+				"Package Control: Install Package"
+			],
+			[
+				"packageC",
+				"Package Control: Add Repository"
+			],
+			[
+				"pa",
+				"Package Control: Disable Package"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			],
+			[
+				"Pack",
+				"Package Control: Install Package"
+			],
+			[
+				"Git",
+				"Git: Init"
+			],
+			[
+				"Package",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Con",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 125.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2deb499853c4371624f5a07e27c334aa' + 'bf8c4e67d14fb0525ba4f89698a6d7e1'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/www/sites/nodeSB",
+		"/www/sites/nodeSB/views",
+		"/www/sites/global/source/ng",
+		"/www/sites/global/source/ng/modules",
+		"/www/sites/mvmst/source",
+		"/www/sites/mvmst/source/html",
+		"/www/sites/mvmst/source/img",
+		"/www/sites/mvmst/source/scss",
+		"/www/sites/entnr/source"
+	],
+	"file_history":
+	[
+		"/www/sites/mvmst/source/index.html",
+		"/www/sites/mvmst/source/scss/_template.scss",
+		"/www/sites/entnr/source/index.html",
+		"/www/sites/mvmst/source/html/style-guide.html",
+		"/www/sites/mvmst/source/scss/style.scss",
+		"/www/sites/global/source/scss/core/_base.scss",
+		"/www/sites/global/source/scss/font/comedicon.scss",
+		"/www/sites/sass/style.scss",
+		"/www/api/nginx/enabled/entnr.conf",
+		"/Users/clarkmclean/.ssh/id_rsa.pub",
+		"/www/api/Gruntfile.js",
+		"/www/sites/entnr/public/index.html",
+		"/www/sites/number-mixer/number-mixer.sublime-project",
+		"/www/sites/number-mixer/public/javascripts/number-mixer.js",
+		"/Users/clarkmclean/Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/www/sites/global/source/scss/core/_typography.scss",
+		"/www/sites/global/source/scss/core/_icon.scss",
+		"/www/sites/global/Gruntfile.js",
+		"/www/sites/global/source/scss/core/_grid.scss",
+		"/www/sites/nodeSB/public/stylesheets/style.css",
+		"/www/sites/midvale-temp/index.html",
+		"/www/sites/mvmst/source/html/home.html",
+		"/www/sites/mvmst/source/img/logo",
+		"/www/sites/mvmst/source/scss/_color.scss",
+		"/www/sites/nodeSB/views/index.hjs",
+		"/www/api/nginx/nginx.conf",
+		"/www/sites/nodeSB/package.json",
+		"/www/sites/nodeSB/views/style-guide.hjs",
+		"/www/sites/rotating-scroller/radialscroll.js",
+		"/www/sites/nodeSB/views/radial-scroll-demo.hjs",
+		"/www/sites/nodeSB/app.js",
+		"/www/sites/nodeSB/routes/index.js",
+		"/Users/clarkmclean/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/www/sites/number-mixer/views/number-mixer.hjs",
+		"/www/sites/steve/source/scss/style.scss",
+		"/www/sites/global/source/scss/core/variables/midvale.scss",
+		"/www/sites/number-mixer/public/javascripts/jquery.sortable.js",
+		"/www/sites/rotating-scroller/demo.html",
+		"/www/sites/number-mixer/routes/index.js",
+		"/www/sites/rotating-scroller/skrollr.js",
+		"/Users/clarkmclean/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/www/sites/number-mixer/app.js",
+		"/www/sites/nodeSB/views/number-mixer.hjs",
+		"/rcw/trunk1/rcw-site/src/java/com/rcwilley/business/customer/CreditApplication.java",
+		"/rcw/trunk1/rcw-site/site/jsp/account/creditApplication.jsp",
+		"/rcw/trunk/rcw-site/site/script/productDetails.js",
+		"/Users/clarkmclean/Desktop/paymentlog",
+		"/Users/clarkmclean/Desktop/Swiffy output.html",
+		"/www/sites/nodeSB.sublime-project",
+		"/Users/clarkmclean/Downloads/cos.js",
+		"/Users/clarkmclean/Documents/Git/modals/modal.js",
+		"/Users/clarkmclean/Desktop/clarkmclean.net (static)/index.html",
+		"/Users/clarkmclean/Google Drive/Project Archive/tim soret snow js/snow.html",
+		"/rcw/trunk/rcw-site/site/jsp/templates/templateSite.jsp",
+		"/Users/clarkmclean/clarkmclean.net/index.html",
+		"/Users/clarkmclean/Google Drive/cit336/accounts/index.php",
+		"/Users/clarkmclean/Google Drive/cit336/administrate/controller.php",
+		"/Users/clarkmclean/Desktop/snow.html",
+		"/Users/clarkmclean/Library/Application Support/Sublime Text 2/Packages/User/sftp_servers/tylerchristensen",
+		"/www/sites/clark/routes.json",
+		"/var/folders/8_/nfvyr6s50z73r04n9f7cj10h0000gr/T/sublime-sftp-browse-1415156053/tylerchristensen/var/www/html/index.php",
+		"/www/sites/clark/config.json",
+		"/www/sites/clark/public/ng/src/global.js",
+		"/Applications/openDBcopy/bin/start.bat",
+		"/www/sites/clark/public/ng/global.js",
+		"/rcw/trunk/rcw-site/site/script/modal.js",
+		"/Users/clarkmclean/Desktop/adsdf.html",
+		"/Users/clarkmclean/clarkmclean.net/package.json",
+		"/Users/clarkmclean/clarkmclean.net/server.js",
+		"/Users/clarkmclean/Downloads/test.html",
+		"/rcw/trunk/rcw-site/site/styles/style.css",
+		"/Users/clarkmclean/Downloads/KanjiTomo/launch.bat",
+		"/Users/clarkmclean/Downloads/formCode",
+		"/var/folders/8_/nfvyr6s50z73r04n9f7cj10h0000gn/T/sublime-sftp-browse-1408821583/clarkmclean.net/var/www/html/aircooled/wp-config.php",
+		"/var/folders/8_/nfvyr6s50z73r04n9f7cj10h0000gn/T/sublime-sftp-browse-1408821818/clarkmclean.net/var/www/html/aircooled-mirror/wp-config.php",
+		"/Users/clarkmclean/Google Drive/Project Archive/js/shapes-polyfill.js",
+		"/Users/clarkmclean/Google Drive/Project Archive/Wheel/index.html",
+		"/Users/clarkmclean/Google Drive/Project Archive/js/stellar.js",
+		"/var/folders/8_/nfvyr6s50z73r04n9f7cj10h0000gn/T/sublime-sftp-browse-1408233652/clarkmclean.net/var/www/html/index.php",
+		"/var/folders/8_/nfvyr6s50z73r04n9f7cj10h0000gn/T/sublime-sftp-browse-1407801995/clarkmclean.net/var/www/html/aircooled-mirror/wp-config.php",
+		"/var/folders/8_/nfvyr6s50z73r04n9f7cj10h0000gn/T/sublime-sftp-browse-1406589485/clarkmclean.net/var/www/html/aircooled/wp-config.php",
+		"/Applications/MAMP/htdocs/Local-PHP/aircooled/old/wp-config.php",
+		"/var/folders/8_/nfvyr6s50z73r04n9f7cj10h0000gn/T/sublime-sftp-browse-1406506789/clarkmclean.net/var/www/html/aircooled/wp-config.php",
+		"/Applications/MAMP/htdocs/Local-PHP/aircooled/wp-includes/canonical.php",
+		"/Applications/MAMP/htdocs/Local-PHP/aircooled/wp-includes/class-phpass.php",
+		"/Applications/MAMP/htdocs/Local-PHP/aircooled/wp-includes/js/colorpicker.js",
+		"/Applications/MAMP/htdocs/Local-PHP/aircooled/wp-includes/theme-compat/footer.php",
+		"/Users/clarkmclean/Library/Application Support/Sublime Text 2/Packages/User/sftp_servers/test.clarkmclean.net",
+		"/Users/clarkmclean/Library/Application Support/Sublime Text 2/Packages/User/sftp_servers/clarkmclean.net",
+		"/Users/clarkmclean/Library/Application Support/Sublime Text 2/Packages/User/sftp_servers/aircooled.net",
+		"/rcw/trunk/rcw-site/site/script/critical.js",
+		"/Users/clarkmclean/Library/Application Support/Sublime Text 2/Packages/User/JavaScript.sublime-settings",
+		"/Users/clarkmclean/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/clarkmclean/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/var/folders/8_/nfvyr6s50z73r04n9f7cj10h0000gn/T/sublime-sftp-browse-1406055028/clarkmclean.net/clark/index.php"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"type",
+			"hero",
+			"full",
+			"fullBar",
+			"getData",
+			"sortable",
+			"e.",
+			"e",
+			"target",
+			"sortupdate",
+			"dragdrop",
+			"sortupdate",
+			"mousedown",
+			"click",
+			"github",
+			"clearcontext",
+			"facebook",
+			"targetmap",
+			"url",
+			"url("
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/www/sites/nodeSB/views/index.hjs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12397,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9542,
+								9542
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1818.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "number-mixer.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 812,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/rcw/trunk/rcw-site/site/script/modal.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7496,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								162,
+								187
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 171.0
+	},
+	"project": "number-mixer.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 223.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

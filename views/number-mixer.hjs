@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 
-<html class="skrollr skrollr-desktop">
+<html>
 <head>
 <title>Number Mixer!  Mix some numbers...</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="javascripts/jquery.sortable.js"></script>
+<!-- <script src="javascripts/jquery.sortable.js"></script> -->
 <script src="javascripts/number-mixer.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
 <link href="stylesheets/style.css" rel="stylesheet" type="text/css">
@@ -51,11 +51,15 @@
 	}
 
 	.block, .sortable-placeholder{
-		/*this will need to get set by javascript depending on board size*/
+		/*this will need to get set by javascript depending on row*/
 		width: 10%;
 		height: 20%;
 		float: left;
 		margin: 0;
+	}
+
+	.targetBlock{
+		border: 2px red solid;
 	}
 
 	#boardWrapper{
@@ -81,7 +85,7 @@
 	}
 
 	.sortable-dragging{
-		box-shadow: 3px 3px 6px #333;
+		/*add dragging state styles here*/
 	}
 
 	.piece{
@@ -165,6 +169,9 @@
 		background-color: #aaa;
 		color: #aaa;
 		cursor: default;
+	}
+	.dragged-placeholder{
+		opacity: .4;
 	}
 </style>
 <h1 class="tc" style="margin-bottom:30px;">Number Mixer</h1>

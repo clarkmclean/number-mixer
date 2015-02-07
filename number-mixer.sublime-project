@@ -1,0 +1,53 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "/www/sites/nodeSB"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "."
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/www/sites/wgcom"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/www/sites/wiseguys_old"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/www/sites/rotating-scroller"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/www/sites/sass"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/www/sites/global"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/www/sites/steve"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/www/api"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/www/sites/mvmst"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "public"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/www/sites/entnr"
+		}
+	]
+}
